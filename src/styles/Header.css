@@ -20,12 +20,12 @@ header {
 .title {
     font-family: "Cormorant Garamond";
     font-size: 32px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.8rem;
     transition: letter-spacing 0.4s;
 }
 
 .title:hover {
-    letter-spacing: 0.8rem;
+    letter-spacing: 2rem;
 }
 
 nav {
