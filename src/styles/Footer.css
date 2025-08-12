@@ -1,0 +1,15 @@
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+    padding: 0 2rem;
+    font-family: 'Raleway';
+}
+
+.credits a {
+    color: inherit;
+}
