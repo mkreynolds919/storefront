@@ -8,11 +8,14 @@ header {
     background-color: black;
     color: white;
     display: flex;
-    height: 80px;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
     padding: 0 2rem;
+    position: relative;
 }
+
+
 
 .title {
     font-family: "Cormorant Garamond";
@@ -43,6 +46,10 @@ nav {
 .nav-link:hover {
     text-decoration-color: rgba(0, 0, 0, 1);
     text-underline-offset: 0.4em;
+}
+
+.basket {
+    transform-origin: center;
 }
 
 .basket:hover {
