@@ -7,3 +7,18 @@
     font-family: "Raleway";
     src: url("./assets/fonts/Raleway-VariableFont_wght.ttf");
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+}
+
+.link-reset {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
