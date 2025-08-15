@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useOutletContext } from 'react-router-dom';
 import useItem from "../hooks/useItem.js";
 import LoadingProductDetail from './LoadingProductDetail.jsx';
 import ErrorPage from "./ErrorPage.jsx";
@@ -6,7 +6,20 @@ import "../styles/ProductDetail.css";
 
 export default function ProductDetail() {
     const id = useParams().id;
+    const { setCart } = useOutletContext();
     const { data, loading, error } = useItem(id);
+
+    function addToCart(id, num) {
+        setCart(prevCart => {
+            const newCart = { ...prevCart };
+            if (newCart[id]) {
+                newCart[id] += num;
+            } else {
+                newCart[id] = num;
+            }
+            return newCart;
+        });
+    }
 
     if (loading) return <LoadingProductDetail />
     if (error) return <ErrorPage />
