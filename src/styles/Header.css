@@ -28,6 +28,27 @@ header {
     letter-spacing: 2rem;
 }
 
+.cart-icon-container {
+    position: relative;
+}
+
+.cart-quantity-indicator {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+}
+
 nav {
     display: flex;
     align-items: center;

@@ -7,7 +7,7 @@ export default function App() {
     const [cart, setCart] = useState({});
     return (
         <>
-            <Header />
+            <Header numItems={Object.keys(cart).length}/>
             <main>
                 <Outlet context={{
                     cart,
