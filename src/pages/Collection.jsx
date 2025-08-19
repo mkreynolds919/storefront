@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import ErrorPage from "./ErrorPage.jsx";
 import CollectionProductCard from "../components/CollectionProductCard.jsx";
 import "../styles/Collection.css";
+import LoadingCollection from "./LoadingCollection.jsx";
 
 
 export default function Collection() {
@@ -20,6 +21,7 @@ export default function Collection() {
         }
     }
 
+    if (loading) return <LoadingCollection />
     if (error) return <ErrorPage />
 
     return (
