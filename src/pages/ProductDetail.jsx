@@ -23,7 +23,8 @@ export default function ProductDetail() {
                     price: data.price,
                     quantity: parseInt(num),
                     image: data.thumbnail,
-                }
+                    id: data.id,
+                }   
             }
             return newCart;
         });
