@@ -22,6 +22,7 @@ export default function ProductDetail() {
                     brand: data.brand,
                     price: data.price,
                     quantity: parseInt(num),
+                    image: data.thumbnail,
                 }
             }
             return newCart;
