@@ -1,0 +1,45 @@
+
+
+.collection-product-card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway';
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    width: 250px;
+    padding: 1rem;
+}
+
+.collection-product-card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.collection-product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.collection-product-title {
+    font-size: 18px;
+}
+
+.collection-product-brand {
+    font-size: 13px;
+}
+
+.collection-product-price {
+    font-weight: bold;
+    text-align: right;
+}
+
+.collection-product-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.collection-product-card img {
+    max-width: 200px;
+    max-height: 200px;
+}

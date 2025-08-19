@@ -1,0 +1,14 @@
+
+
+.collection-header {
+    font-family: 'Raleway';
+    margin-left: 4rem;
+    font-size: 30px;
+}
+
+.collection-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    padding: 2rem 0;
+}
