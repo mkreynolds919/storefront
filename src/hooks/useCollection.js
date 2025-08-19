@@ -14,7 +14,6 @@ export default function useItem(collection) {
                 return response.json();
             })
             .then(data => {
-                console.log(data.products);
                 setData(data.products);
                 setError(null);
             })

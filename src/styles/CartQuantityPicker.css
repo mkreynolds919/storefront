@@ -1,0 +1,9 @@
+
+.cart-quantity-picker {
+    border-radius: 16px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
+import CartQuantityPicker from './CartQuantityPicker';
+import "../styles/CartProductCard.css";
 
-export default function CartProductCard({ title, brand, price, quantity, image, id, cart, setCart }) {
+export default function CartProductCard({ title, brand, price, quantity, image, id, setCart }) {
     function handleCartRemove(id) {
         setCart((prevCart) => {
             let newCart = { ...prevCart };
-            newCart.filter(item => {
-                return item.id !== id;
-            })
+            delete newCart[id];
+            return newCart;
         });
     }
 
@@ -21,9 +22,9 @@ export default function CartProductCard({ title, brand, price, quantity, image, 
                     <div className="cart-product-brand">{brand}</div>
                 </div>
                 <div className="cart-product-price">${price}</div>
-                <CartQuantityPicker id={id} cart={cart} setCart={setCart}/>
-                <div className="subtotal">Subtotal: ${price * quantity}</div>
-                <button className="cart-remove-item" onClick={() => handleCartRemove(id)}></button>
+                <CartQuantityPicker id={id} quantity={quantity} setCart={setCart}/>
+                <div className="subtotal">Subtotal: ${(price * quantity).toFixed(2)}</div>
+                <button className="cart-remove-item" onClick={() => handleCartRemove(id)}>Remove</button>
             </div>
         </div>
 

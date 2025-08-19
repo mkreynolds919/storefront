@@ -7,7 +7,7 @@ import "../styles/ProductDetail.css";
 
 export default function ProductDetail() {
     const id = useParams().id;
-    const { cart, setCart } = useOutletContext();
+    const { setCart } = useOutletContext();
     const [quantity, setQuantity] = useState(1);
     const { data, loading, error } = useItem(id);
 
@@ -32,7 +32,7 @@ export default function ProductDetail() {
 
     if (loading) return <LoadingProductDetail />
     if (error) return <ErrorPage />
-    console.log(cart);
+
     return (
         <div className="product-detail">
             <div className="product-detail-image">
