@@ -6,4 +6,13 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 50px;
+    padding: 2px;
+}
+
+.cart-quantity-increment, .cart-quantity-decrement {
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+    font-size: 18px;
 }
