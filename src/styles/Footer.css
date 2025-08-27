@@ -8,6 +8,7 @@ footer {
     color: white;
     padding: 0 2rem;
     font-family: 'Raleway';
+    flex-shrink: 0;
 }
 
 .credits a {
