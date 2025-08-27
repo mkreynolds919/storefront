@@ -1,2 +1,36 @@
 
+.cart-product-card {
+    display: flex;
+    font-family: 'Raleway';
+    margin: 2rem;
+}
 
+.cart-product-card img {
+    width: 100px;
+}
+
+.cart-product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cart-product-top-line {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.cart-product-title {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.cart-remove-item {
+    align-self: first baseline;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+}

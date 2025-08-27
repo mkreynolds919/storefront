@@ -8,6 +8,7 @@
     gap: 10px;
     width: 50px;
     padding: 2px;
+    font-family: 'Raleway';
 }
 
 .cart-quantity-increment, .cart-quantity-decrement {
@@ -15,4 +16,9 @@
     background-color: lightgray;
     cursor: pointer;
     font-size: 18px;
+}
+
+.cart-quantity-display {
+    display: flex;
+    align-items: center;
 }
